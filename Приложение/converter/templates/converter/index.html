@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Конвертер</title>
+</head>
+
+<body>
+    <form action="#" method="get">
+    <div class="wrapper"> 
+    <section class="values-categories">
+        <div><h1 class="header">КОНВЕРТЕР ЕДИНИЦ ИЗМЕРЕНИЯ</h1></div>
+        <div>{{ form2.choiceVal }}</div>
+        <div><button class="button" type="submit">Сохранить выбор</button></div>
+    </section>
+    <section class="input-window">
+          <div>{{ form.input_unit }}</div>
+          <div>{{ form3.input_value }}</div>
+          <div>{{ form.output_unit }}</div>
+          <div>{{ form3.output_value }}</div>
+          <div><button class="button" type="submit" value="Convert">Отправить</button></div>
+    </section>
+    </div>
+    </form>  
+</body>
+</html>
